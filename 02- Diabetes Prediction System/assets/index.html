@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 900px;
+            width: 100%;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin: 5px;
+        }
+        
+        .content {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        .info-section h2, .tech-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .features li {
+            padding: 12px 0;
+            border-bottom: 1px solid #ecf0f1;
+            display: flex;
+            align-items: center;
+            font-size: 1.1em;
+        }
+        
+        .features li:before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 1.2em;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .tech-item {
+            background: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #2c3e50;
+            border: 2px solid #e9ecef;
+        }
+        
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .disclaimer h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .disclaimer p {
+            color: #856404;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+        
+        .launch-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .launch-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(39, 174, 96, 0.3);
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🩺 Diabetes Prediction System</h1>
+            <div class="subtitle">AI-Powered Early Detection Using Machine Learning</div>
+            <div>
+                <span class="badge">Random Forest</span>
+                <span class="badge">Medical AI</span>
+                <span class="badge">Health Tech</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="info-section">
+                <h2>About This Project</h2>
+                <ul class="features">
+                    <li>Early diabetes risk assessment</li>
+                    <li>Real-time AI predictions</li>
+                    <li>Medical measurement analysis</li>
+                    <li>Professional healthcare interface</li>
+                    <li>Instant risk level classification</li>
+                    <li>Personalized recommendations</li>
+                </ul>
+                
+                <div class="disclaimer">
+                    <h3>⚠️ Important Notice</h3>
+                    <p>This is an educational AI tool for demonstration purposes. Predictions are based on machine learning patterns and should not replace professional medical diagnosis. Always consult healthcare providers for medical advice.</p>
+                </div>
+            </div>
+            
+            <div class="tech-section">
+                <h2>Technology Stack</h2>
+                <div class="tech-stack">
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">Scikit-Learn</span>
+                    <span class="tech-item">Random Forest</span>
+                    <span class="tech-item">Gradio</span>
+                    <span class="tech-item">Pandas</span>
+                    <span class="tech-item">NumPy</span>
+                    <span class="tech-item">HuggingFace</span>
+                    <span class="tech-item">Machine Learning</span>
+                </div>
+                
+                <h2>Get Started</h2>
+                <p>Click the button below to launch the Diabetes Prediction System and test the AI model with your medical measurements.</p>
+                
+                <button class="launch-btn" onclick="launchApp()">
+                    🚀 Launch Prediction App
+                </button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Diabetes Prediction System | Built with ❤️ for Healthcare Education</p>
+        </div>
+    </div>
+
+    <script>
+        function launchApp() {
+            // This will redirect to the Gradio app when deployed on HuggingFace
+            const currentUrl = window.location.href;
+            if (currentUrl.includes('huggingface.co')) {
+                window.location.href = currentUrl.replace('/~/', '/');
+            } else {
+                // For local development
+                window.open('/app', '_blank');
+            }
+        }
+        
+        // Add some interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const features = document.querySelectorAll('.features li');
+            features.forEach((feature, index) => {
+                feature.style.animationDelay = `${index * 0.1}s`;
+                feature.style.opacity = '0';
+                feature.style.animation = `slideIn 0.5s ease-out ${index * 0.1}s forwards`;
+            });
+        });
+        
+        // Add to style
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { opacity: 0; transform: translateX(-20px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
