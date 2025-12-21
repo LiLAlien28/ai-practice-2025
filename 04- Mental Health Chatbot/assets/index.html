@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot - Emotion AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .emoji {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 30px 0;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature-icon {
+            font-size: 1.5em;
+            margin-right: 15px;
+            width: 40px;
+        }
+        
+        .feature-text h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .feature-text p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .tech-stack {
+            background: #f1f3f4;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+        
+        .tech-stack h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #856404;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="emoji">🧠</div>
+            <h1>Mental Health Chatbot</h1>
+            <p>AI-Powered Emotion Recognition & Support</p>
+        </div>
+        
+        <div class="content">
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <div class="feature-text">
+                        <h3>Smart Emotion Detection</h3>
+                        <p>Advanced SVM algorithm identifies 6 emotional states from text</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">💬</div>
+                    <div class="feature-text">
+                        <h3>Supportive Conversations</h3>
+                        <p>Get empathetic responses tailored to your emotional state</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <div class="feature-text">
+                        <h3>Private & Secure</h3>
+                        <p>Your conversations are confidential and respectful</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-stack">
+                <h3>Powered By</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">SVM Classifier</span>
+                    <span class="tech-tag">TF-IDF</span>
+                    <span class="tech-tag">Gradio UI</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+            </div>
+            
+            <div class="warning">
+                <strong>⚠️ Important Note:</strong> This is an AI assistant for emotional support. 
+                For clinical mental health care, please consult licensed professionals.
+            </div>
+            
+            <div class="footer">
+                <p><strong>Emotion AI Project</strong> • Built with Care ❤️</p>
+                <p>Accuracy: 82.7% • 6 Emotion Categories</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
