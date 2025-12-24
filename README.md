@@ -17,7 +17,6 @@ Muhammad Aamir | Data Science & AI Enthusiast
 
 ### 🏥 Healthcare & Wellness
 1. **[Diabetes Prediction System]([./01-Diabetes-Prediction/](https://github.com/LiLAlien28/myAI-Portfolio-2025/tree/main/02-%20Diabetes%20Prediction%20System))** - RandomForest classifier predicting diabetes risk
-2. **[Heart Disease Risk Predictor](./11-Heart-Disease-Predictor/)** - Cardiovascular disease risk assessment
 3. **[BMI Calculator with Health Recommendations](./14-BMI-Calculator/)** - Health metrics & personalized advice
 4. **[Mental Health Chatbot](./10-Mental-Health-Chatbot/)** - AI-powered emotional support with emotion detection
 
