@@ -25,7 +25,7 @@ Muhammad Aamir | Data Science & AI Enthusiast
 6. **[Sentiment Analysis](./04-Sentiment-Analysis/)** - Product review sentiment classifier (Positive/Negative/Neutral)
 7. **[Named Entity Recognition](./07-Named-Entity-Recognition/)** - Extract entities (names, locations, dates) from text
 
-### 🧬 Biotechnology & Genomics
+### 🧬 Biotechnology 
 
 ### 🖼️ Computer Vision
 9. **[Face Emotion Detection](./02-Face-Emotion-Detection/)** - Real-time emotion recognition from webcam
