@@ -143,5 +143,3 @@ Machine Learning • Deep Learning • NLP • Computer Vision • Python • Te
 ### ⭐ Final Note
 
 This repository represents my **learning journey**, while my **main portfolio** represents my **professional work**.
-
-Just tell me the number.
